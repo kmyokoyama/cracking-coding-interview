@@ -14,7 +14,7 @@ public class Question1Test {
     @ParameterizedTest(name = "{index} - All chars in \"{0}\" are unique: {1}")
     @MethodSource("provideStringsForChecker")
     @DisplayName("Check if string contains only unique chars")
-    public void shouldReturnTrueWhenAllUniqueCharacters(String text, boolean expected) {
+    public void shouldReturnTrueOnlyWhenAllUniqueCharacters(String text, boolean expected) {
         // Given.
         UniqueCharacterChecker sut = new UniqueCharacterChecker();
 
