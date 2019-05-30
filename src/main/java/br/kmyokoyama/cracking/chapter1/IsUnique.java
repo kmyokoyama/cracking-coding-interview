@@ -1,6 +1,6 @@
 package br.kmyokoyama.cracking.chapter1;
 
-public class UniqueCharacterChecker {
+public class IsUnique {
 
     public boolean check(String text) {
         int n = 0;

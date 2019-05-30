@@ -9,14 +9,14 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Question1Test {
+public class IsUniqueTest {
 
     @ParameterizedTest(name = "{index} - All chars in \"{0}\" are unique: {1}")
     @MethodSource("provideStringsForChecker")
     @DisplayName("Check if string contains only unique chars")
     public void shouldReturnTrueOnlyWhenAllUniqueCharacters(String text, boolean expected) {
         // Given.
-        UniqueCharacterChecker sut = new UniqueCharacterChecker();
+        IsUnique sut = new IsUnique();
 
         // When.
         boolean isUnique = sut.check(text);

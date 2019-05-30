@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class Question2Test {
+public class StringInverterTest {
 
     @ParameterizedTest(name = "{index} - Inverted \"{0}\" is \"{1}\"")
     @MethodSource("provideStringsForInverter")
@@ -18,8 +18,10 @@ public class Question2Test {
         // Given.
         StringInverter sut = new StringInverter();
 
+        // When.
         char[] invertedText = sut.invert(text);
 
+        // Then.
         assertArrayEquals(expected, invertedText);
     }
 
